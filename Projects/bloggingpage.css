@@ -1,0 +1,174 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #485059;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    padding-right: 1300px;
+    color:white;
+    
+  }
+  
+  /* Container for layout */
+  .container {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 50px); /* Adjust for the header height */
+  }
+  
+  /* Left sidebar styles */
+  .sidebar {
+    background-color: #090909;
+    color: white;
+    width: 20%;
+    padding: 20px;
+    box-shadow: inset -1px 0 0 #ddd;
+    height: 100%;
+    padding-bottom: 1500px;
+    
+   
+    
+  }
+  .sidebar h2 {
+    margin: 0 0 20px;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+.fa-chevron-down{
+    padding-left: 200px;
+    padding-bottom: 20px;
+}
+  /* Body content styles */
+  .body-content {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100%;
+    padding-bottom: 1000px;
+  }
+ .img{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 250px;
+    width: 300px;
+
+ }
+ .img0{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    height: 250px;
+    width: 250px;
+    padding-top: 250px;
+
+ }
+  
+  /* Right sidebar styles */
+ .button{
+
+padding-left: 100px;
+width: 100px;
+height: 30px;
+background-color: white;
+margin-right: 300px;
+
+ } 
+ .fa-magnifying-glass{
+padding-left: 150px;
+
+ }
+ .right-sidebar {
+   
+    background-color:white;
+    width: 400px;
+    padding: 20px;
+  
+  
+   
+  }
+  .posts .title{
+    text-decoration: none;
+    color: #090909;
+  }
+  
+  .section{
+    width:150px;
+    height: 15px;
+    padding-left: 50px;
+    padding-bottom: 350px;
+    padding-top: 75px;
+  }
+  .right-sidebar .section-posts{
+    list-style-type: none;
+    text-decoration: none;
+    width:95%;
+    height: 250px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    font-size:.8em;
+    margin-bottom: 400px;
+  }
+ .right-sidebar .section-posts .posts{
+   border-top:1px solid white;
+   margin-top: 10px;
+   padding-top: 10px;
+  }
+   .posts img{
+    height: 60px;
+    width: 60px;
+    float:left;
+    margin-right: 10px;
+    justify-content: space-between;
+  }
+  .img123{
+    padding-right: 500px;
+    
+    
+  }
+  .section li{
+    text-decoration: none;
+  }
+  
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-sidebar, .right-sidebar {
+      width: 100%;
+      box-shadow: none;
+    }
+  }
